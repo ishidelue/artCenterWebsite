@@ -47,48 +47,122 @@
 
     <!-- Main Content -->
     <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- 新增：超音波導引深部引流 -->
         <section class="mb-12">
-            <h2 class="text-2xl font-bold text-primary mb-8">超音波導引神經阻斷術</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <p class="text-gray-700 col-span-1 md:col-span-2">
-                    超音波導引神經阻斷術運用高解析度超音波技術，能夠即時視覺化神經位置，大幅提升治療的精準度與安全性。此技術在急診環境中具有顯著優勢，能夠快速緩解病患疼痛症狀，同時降低併發症風險。相較於傳統方法，超音波導引不僅減少藥物使用量，更能縮短治療時間，讓病患在急診室內就能獲得有效的疼痛控制，進而減少住院需求並提升整體醫療效率。
+            <h2 class="text-2xl font-bold text-primary mb-8">超音波導引深部引流</h2>
+            <div class="bg-white rounded-lg py-6">
+                <p class="text-gray-700">
+                    運用高解析度超音波，精準定位深部膿瘍、肝膿瘍、腎臟積膿等感染灶，進行經皮穿刺引流（如PTGBD、PCN等）。此技術大幅提升治療安全性與成功率，減少傳統手術風險，並能即時緩解病患症狀。中心團隊具備豐富經驗，處置成功率高，併發症低，讓病患能快速康復。
                 </p>
-                <div class="bg-white rounded-lg shadow-md p-6 h-full">
-                    <h3 class="text-xl font-bold text-primary mb-4">慢性疼痛的急性控制</h3>
-                    <p class="text-gray-700">
-                        慢性疼痛的急性發作常令病友們難以忍受。針對諸如慢性下背痛、坐骨神經痛，或是因舊傷、退化導致的關節肌肉疼痛，為病友提供快速且有效的疼痛控制。
-                    </p>
+                <!-- 臨床案例照片 Carousel -->
+                <div class="mt-6">
+                    <div class="relative">
+                        <div id="clinical-carousel" class="overflow-x-auto flex space-x-6 scrollbar-hide scroll-smooth" style="scrollbar-width: none; -ms-overflow-style: none;">
+                            <style>
+                                .scrollbar-hide::-webkit-scrollbar { display: none; }
+                            </style>
+                            <!-- Carousel Item 1 -->
+                            <div class="min-w-[33.3333%] max-w-[33.3333%] flex-shrink-0 bg-gray-100 rounded-lg shadow p-4 flex flex-col items-center">
+                                <img src="img/clinical/drainage01.jpg" alt="醫師執行超音波導引穿刺術" class="w-full h-64 object-cover rounded mb-4" />
+                                <div class=" text-base text-gray-600 min-h-[2.5em]">醫師於無菌環境下，運用超音波精準導引進行穿刺引流，提升治療安全與效率。</div>
+                            </div>
+                            <!-- Carousel Item 2 -->
+                            <div class="min-w-[33.3333%] max-w-[33.3333%] flex-shrink-0 bg-gray-100 rounded-lg shadow p-4 flex flex-col items-center">
+                                <div class="w-full h-64 bg-gray-300 rounded mb-4 flex items-center justify-center text-gray-400 text-5xl">
+                                    <span>照片2</span>
+                                </div>
+                                <div class="text-center text-base text-gray-600 min-h-[2.5em]">案例說明2</div>
+                            </div>
+                            <!-- Carousel Item 3 -->
+                            <div class="min-w-[33.3333%] max-w-[33.3333%] flex-shrink-0 bg-gray-100 rounded-lg shadow p-4 flex flex-col items-center">
+                                <div class="w-full h-64 bg-gray-300 rounded mb-4 flex items-center justify-center text-gray-400 text-5xl">
+                                    <span>照片3</span>
+                                </div>
+                                <div class="text-center text-base text-gray-600 min-h-[2.5em]">案例說明3</div>
+                            </div>
+                            <!-- Carousel Item 4 -->
+                            <div class="min-w-[33.3333%] max-w-[33.3333%] flex-shrink-0 bg-gray-100 rounded-lg shadow p-4 flex flex-col items-center">
+                                <div class="w-full h-64 bg-gray-300 rounded mb-4 flex items-center justify-center text-gray-400 text-5xl">
+                                    <span>照片4</span>
+                                </div>
+                                <div class="text-center text-base text-gray-600 min-h-[2.5em]">案例說明4</div>
+                            </div>
+                            <!-- Carousel Item 5 -->
+                            <div class="min-w-[33.3333%] max-w-[33.3333%] flex-shrink-0 bg-gray-100 rounded-lg shadow p-4 flex flex-col items-center">
+                                <div class="w-full h-64 bg-gray-300 rounded mb-4 flex items-center justify-center text-gray-400 text-5xl">
+                                    <span>照片5</span>
+                                </div>
+                                <div class="text-center text-base text-gray-600 min-h-[2.5em]">案例說明5</div>
+                            </div>
+                        </div>
+                        <!-- Carousel Scroll Buttons -->
+                        <div class="flex justify-center mt-4 space-x-4">
+                            <button type="button" id="carousel-left-btn" class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-primary/80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button type="button" id="carousel-right-btn" class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-primary/80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                        <script>
+                        // Carousel scroll buttons
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const carousel = document.getElementById('clinical-carousel');
+                            const leftBtn = document.getElementById('carousel-left-btn');
+                            const rightBtn = document.getElementById('carousel-right-btn');
+                            if (carousel && leftBtn && rightBtn) {
+                                const scrollAmount = carousel.offsetWidth * 0.8;
+                                leftBtn.addEventListener('click', () => {
+                                    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                                });
+                                rightBtn.addEventListener('click', () => {
+                                    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                                });
+                            }
+                        });
+                        </script>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 h-full">
-                    <h3 class="text-xl font-bold text-primary mb-4">外傷性疼痛控制</h3>
-                    <p class="text-gray-700">
-                        針對骨折脫臼等病患，本中心利用超音波導引，快速阻斷傷患部位的疼痛知覺，讓病患可以更安心舒適地等待後續的治療檢查，也能減少系統性消炎止痛藥物的使用量。
-                    </p>
-                </div>
-                
             </div>
         </section>
+        <!-- INSERT_YOUR_CODE -->
         <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-12"></div>
+        <!-- 新增：超音波導引神經阻斷術 -->
         <section class="mb-12">
-            <h2 class="text-2xl font-bold text-primary mb-8">特色醫療服務</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-md p-6 h-full">
-                    <h3 class="text-xl font-bold text-primary mb-4">急診超音波</h3>
-                    <p class="text-gray-700">
-                        提供即時、準確的超音波診斷服務，協助醫師做出最佳治療決策。
-                    </p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 h-full">
-                    <h3 class="text-xl font-bold text-primary mb-4">介入性疼痛控制</h3>
-                    <p class="text-gray-700">
-                        運用先進技術進行精準的疼痛控制治療，提供更好的病患照護。
-                    </p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 h-full">
-                    <h3 class="text-xl font-bold text-primary mb-4">介入性感染引流</h3>
-                    <p class="text-gray-700">
-                        專業的感染引流技術，提供最佳治療效果。
-                    </p>
+            <h2 class="text-2xl font-bold text-primary mb-8">超音波導引神經阻斷術</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700">
+                    結合超音波即時影像，精準辨識神經位置，進行神經阻斷注射，有效緩解急慢性疼痛（如骨折、脫臼、慢性下背痛等）。此技術可減少藥物用量、降低副作用，並提升疼痛控制效率，讓病患在急診即可獲得舒適治療，減少住院需求。
+                </p>
+            </div>
+        </section>
+        <!-- 新增：超音波導引血管通路（PICC） -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">超音波導引血管通路（PICC）</h2>
+            <div class="rounded-lg py-6 mb-8">
+                <p class="text-gray-700">
+                    利用超音波輔助，安全快速建立周邊插入中心靜脈導管（PICC），適用於長期輸液、化療或困難血管存取病患。超音波導引能降低併發症與失敗率，提升置管成功率與病患舒適度。中心醫師具備原廠認證與豐富臨床經驗，提供高品質血管通路服務。
+                </p>
+            </div>
+            <!-- Carousel for PICC images -->
+            <div class="relative">
+                <div id="picc-carousel" class="grid grid-cols-1 md:grid-cols-3 gap-6 pb-4">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col h-full items-center">
+                        <img src="img/clinical/picc01.jpg" alt="PICC 實際操作照片1" class="rounded-md mb-6 object-cover w-full h-44 md:h-48" />
+                        <div class="text-center text-base text-gray-700 min-h-[2.5em]">PICC 置管超音波導引示意</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col h-full items-center">
+                        <img src="img/clinical/picc02.jpg" alt="PICC 實際操作照片2" class="rounded-md mb-6 object-cover w-full h-44 md:h-48" />
+                        <div class="text-center text-base text-gray-700 min-h-[2.5em]">PICC 置管完成狀態</div>
+                    </div>
+                    <!-- Empty card for 1/3 layout if needed -->
+                    <div class="bg-transparent"></div>
                 </div>
             </div>
         </section>
