@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臨床業務介紹 - 先進與創新急症技術中心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#008aa0',
+                        secondary: '#f1f1f1',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white text-gray-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="logo.svg" alt="先進與創新急症技術中心" class="h-12">
+                <a href="index.html" class="text-xl font-bold">先進與創新急症技術中心</a>
+            </div>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-primary">首頁</a>
+                <a href="team.html" class="hover:text-primary">團隊介紹</a>
+                <a href="clinical.html" class="hover:text-primary">臨床業務介紹</a>
+                <a href="achievements.html" class="hover:text-primary">實績</a>
+                <a href="education.html" class="hover:text-primary">臨床教學</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="w-full h-64 bg-primary relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl text-white font-bold">臨床業務介紹</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">超音波導引神經阻斷術</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <p class="text-gray-700 col-span-1 md:col-span-2">
+                    超音波導引神經阻斷術運用高解析度超音波技術，能夠即時視覺化神經位置，大幅提升治療的精準度與安全性。此技術在急診環境中具有顯著優勢，能夠快速緩解病患疼痛症狀，同時降低併發症風險。相較於傳統方法，超音波導引不僅減少藥物使用量，更能縮短治療時間，讓病患在急診室內就能獲得有效的疼痛控制，進而減少住院需求並提升整體醫療效率。
+                </p>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">慢性疼痛的急性控制</h3>
+                    <p class="text-gray-700">
+                        慢性疼痛的急性發作常令病友們難以忍受。針對諸如慢性下背痛、坐骨神經痛，或是因舊傷、退化導致的關節肌肉疼痛，為病友提供快速且有效的疼痛控制。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">外傷性疼痛控制</h3>
+                    <p class="text-gray-700">
+                        針對骨折脫臼等病患，本中心利用超音波導引，快速阻斷傷患部位的疼痛知覺，讓病患可以更安心舒適地等待後續的治療檢查，也能減少系統性消炎止痛藥物的使用量。
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-12"></div>
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">特色醫療服務</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">急診超音波</h3>
+                    <p class="text-gray-700">
+                        提供即時、準確的超音波診斷服務，協助醫師做出最佳治療決策。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">介入性疼痛控制</h3>
+                    <p class="text-gray-700">
+                        運用先進技術進行精準的疼痛控制治療，提供更好的病患照護。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">介入性感染引流</h3>
+                    <p class="text-gray-700">
+                        專業的感染引流技術，提供最佳治療效果。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">聯絡資訊</h3>
+                    <p>衛生福利部雙和醫院(委託臺北醫學大學興建經營)</p>
+                    <p>235041 新北市中和區中正路291號</p>
+                    <p>代表號：02-22490088</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速連結</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary">首頁</a></li>
+                        <li><a href="team.html" class="hover:text-secondary">團隊介紹</a></li>
+                        <li><a href="clinical.html" class="hover:text-secondary">臨床業務介紹</a></li>
+                        <li><a href="achievements.html" class="hover:text-secondary">實績</a></li>
+                        <li><a href="education.html" class="hover:text-secondary">臨床教學</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">關注我們</h3>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 先進與創新急症技術中心. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

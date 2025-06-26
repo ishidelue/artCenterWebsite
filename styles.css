@@ -1,0 +1,26 @@
+/* Custom styles */
+.banner-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Smooth transitions */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Custom container max-width */
+.container {
+    max-width: 1200px;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+    .text-4xl {
+        font-size: 1.875rem;
+    }
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+} 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臨床教學 - 先進與創新急症技術中心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#008aa0',
+                        secondary: '#f1f1f1',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white text-gray-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="logo.svg" alt="先進與創新急症技術中心" class="h-12">
+                <a href="index.html" class="text-xl font-bold">先進與創新急症技術中心</a>
+            </div>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-primary">首頁</a>
+                <a href="team.html" class="hover:text-primary">團隊介紹</a>
+                <a href="clinical.html" class="hover:text-primary">臨床業務介紹</a>
+                <a href="achievements.html" class="hover:text-primary">實績</a>
+                <a href="education.html" class="hover:text-primary">臨床教學</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="w-full h-64 bg-primary relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl text-white font-bold">臨床教學</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">教學課程</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">急診超音波訓練</h3>
+                    <p class="text-gray-700">
+                        提供完整的急診超音波訓練課程，包括基礎理論和實務操作，培養專業的超音波技術人才。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">介入性治療技術</h3>
+                    <p class="text-gray-700">
+                        教授各項介入性治療技術，包括疼痛控制、感染引流等，提升臨床治療能力。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">實習計畫</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">醫學生實習</h3>
+                    <p class="text-gray-700">
+                        提供醫學生急診醫學實習機會，培養急診醫學專業人才。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">住院醫師訓練</h3>
+                    <p class="text-gray-700">
+                        提供完整的住院醫師訓練計畫，培養急診專科醫師。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">進修醫師訓練</h3>
+                    <p class="text-gray-700">
+                        提供進修醫師專業訓練課程，提升臨床技能和專業知識。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">基礎急重症超音波課程</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">基礎理論課程</h3>
+                    <p class="text-gray-700">
+                        包含超音波物理原理、儀器操作、基本掃描技巧等基礎知識，為臨床應用打下堅實基礎。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">實務操作訓練</h3>
+                    <p class="text-gray-700">
+                        透過實際案例演練，學習心臟、肺部、腹部等各部位的超音波檢查技術，提升臨床診斷能力。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">介入性治療訓練</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">超音波導引技術</h3>
+                    <p class="text-gray-700">
+                        學習超音波導引下的各種介入性治療技術，包括引流、切片、注射等操作技巧。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">實務案例研討</h3>
+                    <p class="text-gray-700">
+                        透過實際案例討論，學習如何選擇適當的介入性治療方式，並掌握操作要點。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-8">程序鎮靜止痛訓練</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">藥物使用與監測</h3>
+                    <p class="text-gray-700">
+                        學習各種鎮靜止痛藥物的特性、適應症、禁忌症，以及病人監測技術。
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <h3 class="text-xl font-bold text-primary mb-4">實務操作演練</h3>
+                    <p class="text-gray-700">
+                        透過模擬情境，練習鎮靜止痛的實際操作流程，確保病人安全與舒適。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">聯絡資訊</h3>
+                    <p>衛生福利部雙和醫院(委託臺北醫學大學興建經營)</p>
+                    <p>235041 新北市中和區中正路291號</p>
+                    <p>代表號：02-22490088</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速連結</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary">首頁</a></li>
+                        <li><a href="team.html" class="hover:text-secondary">團隊介紹</a></li>
+                        <li><a href="clinical.html" class="hover:text-secondary">臨床業務介紹</a></li>
+                        <li><a href="achievements.html" class="hover:text-secondary">實績</a></li>
+                        <li><a href="education.html" class="hover:text-secondary">臨床教學</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">關注我們</h3>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 先進與創新急症技術中心. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
